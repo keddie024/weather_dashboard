@@ -1,0 +1,14 @@
+header {
+    background-color: rgb(23, 23, 153);
+    color: white;
+}
+
+.forecast-card {
+    background-color: rgb(1, 60, 77);
+    color: white;
+}
+
+.temp-button {
+    background-color: grey;
+    color: black;
+}
