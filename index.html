@@ -10,11 +10,13 @@
 </head>
 
 <body>
+    <!--Title of the page-->
     <header>
         <h1 class ="text-center p-2">Weather Dashboard</h1>
     </header>
-
+    
     <div class="row mw-100">
+        <!--Left side of the page-->
         <div class="col-sm-12 col-md-5 col-lg-3 m-2">
             <h1 class="text-left">Search for a City:</h1>
             <div class="text-center">
@@ -24,15 +26,16 @@
                   <button class="btn btn-primary w-100 mb-4" id="search-button">Search</button>
                 <div>
                   <ul class = "mt-4 p-0" id = "searched-cities">
-                      <!-- <button class="btn btn-primary w-100 city-btn">San Diego</button> -->
+                      
                   </ul>
                 </div>
             </div>
         </div>
 
+        <!--Right side of the page-->
         <div class="col-sm-12 col-md-12 col-lg-8 m-2">
             <div class="card p-3">
-                <h1 id="city-name">City <span id="current-date">(Date)</span></h1><br>
+                <h1 id="city-name">City (Date)</span></h1><br>
                 <p id="city-temp">Temp: </p><br>
                 <p id="city-wind">Wind: </p><br>
                 <p id ="city-hum">Humidity: </p><br>
