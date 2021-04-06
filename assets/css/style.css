@@ -12,3 +12,7 @@ header {
     background-color: grey;
     color: black;
 }
+
+.hide {
+    display: none;
+}

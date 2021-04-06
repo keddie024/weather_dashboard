@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css"/>
-    <title>Document</title>
+    <title>Weather API</title>
 </head>
 
 <body>
@@ -21,10 +21,10 @@
                 <div class="card-body">
                   <input class="form-control" id="user-city" placeholder="San Diego">
                 </div>
-                  <a href="#" class="btn btn-primary w-100 mb-4">Search</a>
+                  <button class="btn btn-primary w-100 mb-4" id="search-button">Search</button>
                 <div>
                   <ul class = "mt-4 p-0" id = "searched-cities">
-                      <button class="btn btn-primary w-100 p">Sample</button>
+                      <button class="btn btn-primary w-100 city-btn">San Diego</button>
                   </ul>
                 </div>
             </div>
@@ -32,47 +32,47 @@
 
         <div class="col-sm-12 col-md-12 col-lg-8 m-2">
             <div class="card p-3">
-                <h1>City (Date)</h1><br>
-                <p>Temp: </p><br>
-                <p>Wind: </p><br>
-                <p>Humidity: </p><br>
-                <p>UV Index: </p><br>
+                <h1 id="city-name">City <span id="current-date">(Date)</span></h1><br>
+                <p id="city-temp">Temp: </p><br>
+                <p id="city-wind">Wind: </p><br>
+                <p id ="city-hum">Humidity: </p><br>
+                <p id="city-UV">UV Index: </p><br>
             </div>
 
-            <div class="hide">
+            <div class="hide" id="5-day">
                 <h2 class="mt-3">5-Day Forecast:</h2>
 
                 <div class="row">
 
-                    <div class="card col-2 m-3 forecast-card">
+                    <div class="card col-2 m-3 forecast-card" id="card-1">
                         <h2>Date</h2>
                         <p>Temp:</p>
                         <p>Wind:</p>
                         <p>Hum:</p>
                     </div>
 
-                    <div class="card col-2 m-3 forecast-card">
+                    <div class="card col-2 m-3 forecast-card" id="card-2">
                         <h2>Date</h2>
                         <p>Temp:</p>
                         <p>Wind:</p>
                         <p>Hum:</p>
                     </div>
 
-                    <div class="card col-2 m-3 forecast-card">
+                    <div class="card col-2 m-3 forecast-card" id="card-3">
                         <h2>Date</h2>
                         <p>Temp:</p>
                         <p>Wind:</p>
                         <p>Hum:</p>
                     </div>
 
-                    <div class="card col-2 m-3 forecast-card">
+                    <div class="card col-2 m-3 forecast-card" id="card-4">
                         <h2>Date</h2>
                         <p>Temp:</p>
                         <p>Wind:</p>
                         <p>Hum:</p>
                     </div>
 
-                    <div class="card col-2 m-3 forecast-card">
+                    <div class="card col-2 m-3 forecast-card" id="card-5">
                         <h2>Date</h2>
                         <p>Temp:</p>
                         <p>Wind:</p>
@@ -83,10 +83,9 @@
       </div>
     </div>
 
-
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src ="./assets/js/script.js"></script>
     
 </body>
 </html>
